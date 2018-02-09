@@ -197,6 +197,7 @@
     content: attr(title);
     width: 80px;
     vertical-align: baseline;
+    background-image: none;
   }
   .cssume ol li {
     float: none;
