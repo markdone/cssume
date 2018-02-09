@@ -35,9 +35,12 @@ ul
     margin-top 10px
 
 ol
-  &::after
+  &::after, &::before
     content ''
     display table
+
+  &::after
+    clear both
 
   > li
     float left
@@ -142,3 +145,13 @@ img, picture
   display block
   max-width 100%
   margin 0 auto
+
+@media print
+  ul, ol
+    a[title]::before
+      content attr(title)
+      width 80px
+      vertical-align baseline
+
+  ol li
+    float none

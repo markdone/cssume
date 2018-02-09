@@ -65,7 +65,7 @@ Computer Systems Engineering and GPA 3.76
 **Finalist**
 _Penn Apps Spring 2016_
 
-Such and amazing app that did a lot of things. Integrations with Uber, Postmates, Spotify, and Office 365. Written with Ionic Framework and hosted on Kubernetes 😎 for the cred
+Such and amazing app that did a lot of things. Integrations with Uber, Postmates, Spotify, and Office 365. Written with Ionic Framework and hosted on Kubernetes for the cred
 
 ### FoodStash
 
@@ -76,15 +76,6 @@ _Hophacks Spring 2016_
 * All storage and payment in based on the blockchain with Ethereum and Mist
 
 ## Skills
-
-### Web Development
-
-* **Dank Memes** I can find the deepest, dankest memes out there on the inerwebs
-* **Distributed Systems** I only run my apps on Kubernetes and a CoreOS cluster
-* **Tooling** I literally treat Dan Abromov's Twitter as holy gospel
-* **Frameworks** React, Redux, Reselect, Redankmeme, Revenant, Angular
-
-## Technologies
 
 * Javascript
 * Scala
