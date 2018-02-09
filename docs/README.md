@@ -73,8 +73,7 @@ Such and amazing app that did a lot of things. Integrations with Uber, Postmates
 _Hophacks Spring 2016_
 
 * Food-storage-as-a-Service app that lets people put their food in your fridge
-
-- All storage and payment in based on the blockchain with Ethereum and Mist
+* All storage and payment in based on the blockchain with Ethereum and Mist
 
 ## Skills
 
