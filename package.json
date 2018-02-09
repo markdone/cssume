@@ -15,7 +15,7 @@
     "watch:docs": "run-p 'build:docs -- -w'",
     "serve:docs": "live-server site --port 8010",
     "build:lib": "stylus src/*.styl -u autoprefixer-stylus -o dist",
-    "version": "banner-cli 'dist/*.css' -t $npm_package_version && git add -A dist",
+    "version": "npm run build && banner-cli 'dist/*.css' -t $npm_package_version && git add -A dist",
     "watch:lib": "run-p 'build:lib -- -o site -w'",
     "dev": "run-p watch:* serve:docs",
     "build": "run-p build:*",
