@@ -19,7 +19,7 @@
     "watch:lib": "run-p 'build:lib -- -o site -w'",
     "dev": "run-p watch:* serve:docs",
     "build": "run-p build:*",
-    "deploy:docs": "npm run build && cpy dist/*.css site && gh-pages -d site"
+    "deploy:docs": "cpy dist/*.css site && gh-pages -d site"
   },
   "homepage": "https://markdone.github.io/cssume/",
   "repository": "markdone/cssume",
