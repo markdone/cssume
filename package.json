@@ -1,0 +1,31 @@
+{
+  "name": "cssume",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/cssume.css",
+  "scripts": {
+    "build:docs": "parcel build docs/index.html --public-url ./",
+    "dev:docs": "pug docs -w",
+    "dev": "stylus src -u autoprefixer-stylus -o dist -w",
+    "build": "stylus src -u autoprefixer-stylus -o dist",
+    "watch": "npm run dev & npm run dev:docs"
+  },
+  "homepage": "https://markdone.github.io/cssume/",
+  "repository": "markdone/cssume",
+  "keywords": [
+    "markdown",
+    "css",
+    "resume",
+    "theme",
+    "cv",
+    "style"
+  ],
+  "author": "qingwei-li <cinwell.li@gmail.com> (https://cinwell.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.14.0",
+    "jstransformer-marked": "^1.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "stylus": "^0.54.5"
+  }
+}
