@@ -4,10 +4,12 @@
 
 [![npm][npm-image]][npm-url]
 [![downloads][downloads-image]][npm-url]
+[![size][size-image]][npm-url]
 
 [npm-image]: https://img.shields.io/npm/v/cssume.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/cssume
 [downloads-image]: https://img.shields.io/npm/dm/cssume.svg?style=flat-square
+[size-image]: http://img.badgesize.io/https://unpkg.com/cssume?compression=gzip&label=gzip%20size
 
 Write your resume with markdown and turn it into an HTML page, and then let cssume to beautify it!
 
