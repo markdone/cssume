@@ -1,0 +1,144 @@
+@import 'icon'
+
+h1, h2
+  text-transform uppercase
+
+h1, h2, h3
+  font-weight 600
+  line-height 1
+  margin 0
+
+h1
+  padding-top 9px
+  font-size 30px
+  letter-spacing 1.3px
+  margin-bottom 45px
+
+p
+  margin 0 0 7px
+  color #96999b
+
+blockquote
+  margin 0
+  padding 0
+
+blockquote > p
+  color #323336
+
+ul, ol
+  padding 0
+  list-style none
+  margin 20px 0 0 0
+
+ul
+  li
+    margin-top 10px
+
+ol
+  &::after
+    content ''
+    display table
+
+  > li
+    float left
+    margin-right 20px
+    margin-bottom 12px
+
+  a[title]::before
+    margin-right 6px
+
+hr
+  border none
+
+hr
+  ~ p
+    color #323336
+
+  ~ h3
+    margin-top 60px
+
+  ~ h2 + h3
+    margin-top 0
+
+  ~ ul, ~ ol
+    padding-left 35px
+    list-style disc
+
+    li
+      margin-top 4px
+
+  ~ * a
+    text-decoration underline
+    content none !important
+
+h2
+  margin-top 72px
+  margin-bottom 36px
+  color #c9cccf
+  font-size 12px
+
+h2, h3
+  letter-spacing 1.2px
+
+h3
+  font-size 18px
+  font-weight 600
+  padding-bottom 12px
+
+a
+  color inherit
+  text-decoration none
+
+h3>a
+  text-decoration none
+
+  &::after
+    display inline-block
+    content ''
+    height 14px
+    width 14px
+    margin-left 5px
+    background-size 14px 14px
+    background-image url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath fill='%23999' d='M3 1v1h4.5L.8 8.6l.6.6L8 2.5V7h1V1z'/%3E%3C/svg%3E")
+
+h3 + p
+  strong
+    color #96999b
+    font-weight 300
+
+  em
+    color #96999b
+    font-style normal
+
+  > *:not(:first-child)::before
+    content ''
+    padding-left 6px
+    margin-left 2px
+    height 0.8em
+    border-left 1px solid #96999b
+    display inline-block
+
+h2 + ul
+  margin 0
+  padding 0
+
+  &::before, &::after
+    content ''
+    display table
+
+  &::after
+    clear both
+
+  > li
+    float left
+    padding 5px 18px
+    background-color #f1f5f7
+    margin-right 3px
+    margin-bottom 12px
+    font-size 14px
+    display inline-block
+
+img, picture
+  display block
+  max-width 100%
+  margin 0 auto
