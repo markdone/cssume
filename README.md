@@ -15,7 +15,7 @@ Write your resume with markdown and turn it into an HTML page, and then let cssu
 
 The design is inspired by [standardresume](standardresume.co), and you can learn how to write a good resume from [this article](https://standardresume.co/write-the-perfect-resume).
 
-See the [online demo](https://markdone.github.io/cssume/), and [source markdown](docs/README.md).
+See the [online demo](https://markdone.github.io/cssume/), or [Try it!](https://codepan.net/gist/114524e411d3ed9334715609beb65d27)
 
 ## Install
 
