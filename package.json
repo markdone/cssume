@@ -7,40 +7,36 @@
   "cdn": "dist/cssume.css",
   "jsdelivr": "dist/cssume.css",
   "style": "dist/cssume-scope.css",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build:docs": "sitedown docs -l docs/layout.html -b site -e main",
     "watch:docs": "run-p 'build:docs -- -w'",
     "serve:docs": "live-server site --port 8010",
     "build:lib": "stylus src/*.styl -u autoprefixer-stylus -o dist",
-    "version": "npm run build && banner-cli 'dist/*.css' -t $npm_package_version && git add -A dist",
+    "min:lib":
+      "cssnano dist/cssume.css dist/cssume.min.css && cssnano dist/cssume-scope.css dist/cssume-scope.min.css",
+    "version":
+      "npm run build && banner-cli 'dist/*.css' -t $npm_package_version && git add -A dist",
     "watch:lib": "run-p 'build:lib -- -o site -w'",
     "dev": "run-p watch:* serve:docs",
-    "build": "run-p build:*",
+    "build": "rimraf dist/* && run-p build:* && run-p min:lib",
     "deploy:docs": "cpy dist/*.css site && gh-pages -d site"
   },
   "homepage": "https://markdone.github.io/cssume/",
   "repository": "markdone/cssume",
-  "keywords": [
-    "markdown",
-    "css",
-    "resume",
-    "theme",
-    "cv",
-    "style"
-  ],
+  "keywords": ["markdown", "css", "resume", "theme", "cv", "style"],
   "author": "qingwei-li <cinwell.li@gmail.com> (https://cinwell.com)",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer-stylus": "^0.14.0",
     "banner-cli": "^0.11.1",
     "cpy-cli": "^1.0.1",
+    "cssnano-cli": "^1.0.5",
     "gh-pages": "^1.1.0",
     "jstransformer-marked": "^1.0.3",
     "live-server": "^1.2.0",
     "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2",
     "sitedown": "^3.3.0",
     "stylus": "^0.54.5"
   }
