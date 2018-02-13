@@ -1,22 +1,22 @@
 {
   "name": "cssume",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Markdown theme style for resume",
   "main": "dist/cssume-scope.css",
   "unpkg": "dist/cssume.css",
   "cdn": "dist/cssume.css",
   "jsdelivr": "dist/cssume.css",
   "style": "dist/cssume-scope.css",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build:docs": "sitedown docs -l docs/layout.html -b site -e main",
     "watch:docs": "run-p 'build:docs -- -w'",
     "serve:docs": "live-server site --port 8010",
     "build:lib": "stylus src/*.styl -u autoprefixer-stylus -o dist",
-    "min:lib":
-      "cssnano dist/cssume.css dist/cssume.min.css && cssnano dist/cssume-scope.css dist/cssume-scope.min.css",
-    "version":
-      "npm run build && banner-cli 'dist/*.css' -t $npm_package_version && git add -A dist",
+    "min:lib": "cssnano dist/cssume.css dist/cssume.min.css && cssnano dist/cssume-scope.css dist/cssume-scope.min.css",
+    "version": "npm run build && banner-cli 'dist/*.css' -t $npm_package_version && git add -A dist",
     "watch:lib": "run-p 'build:lib -- -o site -w'",
     "dev": "run-p watch:* serve:docs",
     "build": "rimraf dist/* && run-p build:* && run-p min:lib",
@@ -24,7 +24,14 @@
   },
   "homepage": "https://markdone.github.io/cssume/",
   "repository": "markdone/cssume",
-  "keywords": ["markdown", "css", "resume", "theme", "cv", "style"],
+  "keywords": [
+    "markdown",
+    "css",
+    "resume",
+    "theme",
+    "cv",
+    "style"
+  ],
   "author": "qingwei-li <cinwell.li@gmail.com> (https://cinwell.com)",
   "license": "MIT",
   "devDependencies": {
