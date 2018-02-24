@@ -1,5 +1,5 @@
 /*!
- * Cssume v0.2.0
+ * Cssume v0.2.1
  * https://markdone.github.io/cssume/
  *
  * Copyright (c) 2018 qingwei-li
@@ -21,7 +21,7 @@
 @media (max-width: 620px) {
   .cssume {
     width: auto;
-    margin: 0 20px;
+    margin: 50px 20px;
   }
 }
 .cssume a[title]::before {
