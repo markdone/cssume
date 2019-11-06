@@ -1,6 +1,6 @@
 {
   "name": "cssume",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "description": "Markdown theme style for resume",
   "main": "dist/cssume-scope.css",
   "unpkg": "dist/cssume.css",
